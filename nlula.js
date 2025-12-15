@@ -83,32 +83,5 @@
     });
   };
 
-  //Method to load jQuery
-  function loadJS(src, callback) {
-    var s = document.createElement("script");
-    s.src = src;
-    s.async = true;
-    s.onreadystatechange = s.onload = function () {
-      var state = s.readyState;
-      if (!callback.done && (!state || /loaded|complete/.test(state))) {
-        callback.done = true;
-        callback();
-      }
-    };
-    document.getElementsByTagName("head")[0].appendChild(s);
-  }
-
-  //Add jQuery if not present, then run main
-  if (typeof jQuery == "undefined") {
-    loadJS(
-      ("https:" == document.location.protocol ? "https://" : "http://") +
-        "ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js",
-      function () {
-        jQuery.noConflict();
-        main(jQuery);
-      }
-    );
-  } else {
-    main(jQuery);
-  }
+  main(jQuery);
 })();
