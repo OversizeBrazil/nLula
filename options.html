@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings nLula</title>
+  <style>
+    body { padding: 20px; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; min-width: 400px; }
+    h2 { color: #333; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    textarea { width: 100%; height: 150px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; resize: vertical; }
+    button { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; }
+    button:hover { background-color: #45a049; }
+    .status { color: green; margin-top: 10px; display: none; font-weight: bold; }
+    .checkbox-label { display: flex; align-items: center; font-weight: normal; cursor: pointer; }
+    .checkbox-label input { margin-right: 10px; }
+    .hint { font-size: 0.85em; color: #666; margin-top: 5px; }
+    .small-btn { background-color: #2196F3; padding: 5px 10px; font-size: 12px; margin-right: 5px; margin-bottom: 5px; }
+    .small-btn:hover { background-color: #0b7dda; }
+    .radio-group { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Settings nLula</h2>
+  
+  <div class="form-group">
+    <label class="checkbox-label">
+      <input type="checkbox" id="enabled"> 
+      Enable extension
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="probability">Replacement Percentage: <span id="probabilityValue">100</span>%</label>
+    <input type="range" id="probability" min="0" max="100" value="100" style="width: 100%;">
+  </div>
+
+  <div class="form-group">
+    <label>Site Access:</label>
+    <div class="radio-group">
+      <label class="checkbox-label"><input type="radio" name="siteMode" value="all" checked> All websites</label>
+      <label class="checkbox-label"><input type="radio" name="siteMode" value="specific"> Specific websites only</label>
+    </div>
+  </div>
+
+  <div class="form-group" id="specificSitesContainer" style="display:none;">
+    <label for="allowedSites">Allowed Sites (one domain per line):</label>
+    <div class="quick-add">
+      <button type="button" class="small-btn" data-site="youtube.com">Add YouTube</button>
+      <button type="button" class="small-btn" data-site="instagram.com">Add Instagram</button>
+      <button type="button" class="small-btn" data-site="x.com">Add X.com</button>
+    </div>
+    <textarea id="allowedSites" placeholder="example.com&#10;another-site.org"></textarea>
+  </div>
+  
+  <div class="form-group">
+    <label for="customImages">Additional Images (one URL per line):</label>
+    <textarea id="customImages" placeholder="https://example.com/image1.jpg&#10;https://example.com/image2.jpg"></textarea>
+    <div class="hint">These images will be mixed with the default Lula images.</div>
+  </div>
+
+  <button id="save">Save Settings</button>
+  <div id="status" class="status">Settings saved successfully!</div>
+
+  <script src="options.js"></script>
+</body>
+</html>
