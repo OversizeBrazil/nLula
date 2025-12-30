@@ -1,10 +1,11 @@
 # nLula
-A Chrome extension which replaces all images on all pages to Luiz Inácio Lula da Silva.
+A Chrome and Firefox extension which replaces all images on all pages to Luiz Inácio Lula da Silva.
 
-<!-- ![Luiz Inácio Lula da Silva](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%282023%E2%80%932027%29.jpg/220px-Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%282023%E2%80%932027%29.jpg) -->
+![Luiz Inácio Lula da Silva](https://lh3.googleusercontent.com/Ckjc4Zcj7gJ-BeuZ9WaoGHhJzkrxbeUH-rRS3vaPaHn4yJUjiIhoO7U_h4975ugKSfEei5SYdcHR2b55gMrm-hylVkM=s800-w800-h500) 
 
 
 ## Link
 
 Soon
-<!-- * Chrome: https://chrome.google.com/webstore/detail/nlula/hnbmfljfohghaepamnfokgggaejlmfol?hl=en -->
+* Chrome: https://chromewebstore.google.com/detail/nlula/gdddpnaanddhagnghnlccpiojdighiog
+* Firefox: https://addons.mozilla.org/en-US/firefox/addon/nlula/

@@ -3,26 +3,36 @@
     "name": "nLula",
     "description": "A Chrome extension which replaces all images on all pages to Luiz Inácio Lula da Silva.",
     "version": "1.1",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "nLula@oversizebrazil.me",
+            "data_collection_permissions": {
+                "required": [
+                    "none"
+                ]
+            }
+        }
+    },
     "icons": {
         "128": "icon128.png",
         "48": "icon48.png"
     },
     "content_scripts": [
-		{
-			"matches": ["*://*/*"],
-			"js": ["nlula.js"],
-			"run_at": "document_end"
-		}
-	],
-    "permissions": ["storage"],
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "nlula.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "storage"
+    ],
     "options_ui": {
         "page": "options.html",
         "open_in_tab": false
-    },
-    "web_accessible_resources": [
-		{
-			"resources": ["logo/logo.png"],
-			"matches": ["*://*/*"]
-		}
-	]
+    }
 }
