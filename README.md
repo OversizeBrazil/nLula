@@ -9,3 +9,11 @@ A Chrome and Firefox extension which replaces all images on all pages to Luiz In
 Soon
 * Chrome: https://chromewebstore.google.com/detail/nlula/gdddpnaanddhagnghnlccpiojdighiog
 * Firefox: https://addons.mozilla.org/en-US/firefox/addon/nlula/
+
+## Features
+* Replace all images on all pages to Luiz Inácio Lula da Silva.
+* Works on all websites.
+* Easy to use, just install and enjoy.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
